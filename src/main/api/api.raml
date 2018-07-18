@@ -1,0 +1,21 @@
+#%RAML 1.0
+title: test
+mediaType: application/json
+
+/countries:
+  /{country}:
+    /cities:
+      get:
+        responses: 
+          200:
+            body:
+
+/weather:
+  get:
+    queryParameters: 
+      city: 
+      country:
+    responses:
+      200:
+        body:
+      
